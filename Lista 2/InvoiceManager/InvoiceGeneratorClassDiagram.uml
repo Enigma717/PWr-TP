@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.enigma717.invoicegenerator</OriginalElement>
+  <nodes>
+    <node x="620.0" y="200.0">com.enigma717.invoicegenerator.ProductTest</node>
+    <node x="219.0" y="145.0">com.enigma717.invoicegenerator.ProductAttributes</node>
+    <node x="208.33333333333331" y="863.0">com.enigma717.invoicegenerator.AppMenu</node>
+    <node x="169.33333333333331" y="606.0">com.enigma717.invoicegenerator.InvoiceHandler</node>
+    <node x="0.0" y="134.0">com.enigma717.invoicegenerator.Buyer</node>
+    <node x="397.905303030303" y="0.0">com.enigma717.invoicegenerator.Product</node>
+    <node x="194.77462121212113" y="413.0">com.enigma717.invoicegenerator.Invoice</node>
+    <node x="196.33333333333331" y="964.0">com.enigma717.invoicegenerator.AppMain</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.enigma717.invoicegenerator.ProductAttributes" target="com.enigma717.invoicegenerator.Product" relationship="TO_ONE">
+      <point x="95.25" y="-103.5" />
+      <point x="504.75" y="114.0" />
+      <point x="731.0" y="114.0" />
+      <point x="731.0" y="94.0" />
+      <point x="553.905303030303" y="94.0" />
+      <point x="52.0" y="37.0" />
+    </edge>
+    <edge source="com.enigma717.invoicegenerator.Invoice" target="com.enigma717.invoicegenerator.ProductAttributes" relationship="TO_MANY">
+      <point x="123.33333333333337" y="-70.5" />
+      <point x="503.1079545454545" y="393.0" />
+      <point x="504.75" y="393.0" />
+      <point x="95.25" y="103.5" />
+    </edge>
+    <edge source="com.enigma717.invoicegenerator.InvoiceHandler" target="com.enigma717.invoicegenerator.Invoice" relationship="CREATE">
+      <point x="69.375" y="-103.5" />
+      <point x="331.2083333333333" y="585.0" />
+      <point x="472.27462121212113" y="585.0" />
+      <point x="92.5" y="70.5" />
+    </edge>
+    <edge source="com.enigma717.invoicegenerator.ProductAttributes" target="com.enigma717.invoicegenerator.Product" relationship="CREATE">
+      <point x="-95.25" y="-103.5" />
+      <point x="314.25" y="94.0" />
+      <point x="449.905303030303" y="94.0" />
+      <point x="-52.0" y="37.0" />
+    </edge>
+    <edge source="com.enigma717.invoicegenerator.InvoiceHandler" target="com.enigma717.invoicegenerator.Invoice" relationship="TO_MANY">
+      <point x="23.125" y="-103.5" />
+      <point x="284.9583333333333" y="585.0" />
+      <point x="287.27462121212113" y="585.0" />
+      <point x="-92.5" y="70.5" />
+    </edge>
+    <edge source="com.enigma717.invoicegenerator.ProductTest" target="com.enigma717.invoicegenerator.Product" relationship="CREATE">
+      <point x="-37.0" y="-48.5" />
+      <point x="657.0" y="104.0" />
+      <point x="314.25" y="104.0" />
+      <point x="314.25" y="94.0" />
+      <point x="449.905303030303" y="94.0" />
+      <point x="-52.0" y="37.0" />
+    </edge>
+    <edge source="com.enigma717.invoicegenerator.Invoice" target="com.enigma717.invoicegenerator.ProductAttributes" relationship="CREATE">
+      <point x="5.6843418860808015E-14" y="-70.5" />
+      <point x="379.7746212121212" y="393.0" />
+      <point x="314.25" y="393.0" />
+      <point x="-95.25" y="103.5" />
+    </edge>
+    <edge source="com.enigma717.invoicegenerator.AppMenu" target="com.enigma717.invoicegenerator.InvoiceHandler" relationship="CREATE">
+      <point x="0.0" y="-25.5" />
+      <point x="0.0" y="103.5" />
+    </edge>
+    <edge source="com.enigma717.invoicegenerator.InvoiceHandler" target="com.enigma717.invoicegenerator.Buyer" relationship="TO_MANY">
+      <point x="-69.375" y="-103.5" />
+      <point x="192.45833333333331" y="585.0" />
+      <point x="94.0" y="585.0" />
+      <point x="94.0" y="393.0" />
+      <point x="49.75" y="393.0" />
+      <point x="-49.75" y="114.5" />
+    </edge>
+    <edge source="com.enigma717.invoicegenerator.InvoiceHandler" target="com.enigma717.invoicegenerator.Buyer" relationship="CREATE">
+      <point x="-23.125" y="-103.5" />
+      <point x="238.70833333333331" y="575.0" />
+      <point x="105.0" y="575.0" />
+      <point x="105.0" y="383.0" />
+      <point x="149.25" y="383.0" />
+      <point x="49.75" y="114.5" />
+    </edge>
+    <edge source="com.enigma717.invoicegenerator.ProductTest" target="com.enigma717.invoicegenerator.Product" relationship="TO_ONE">
+      <point x="37.0" y="-48.5" />
+      <point x="731.0" y="94.0" />
+      <point x="553.905303030303" y="94.0" />
+      <point x="52.0" y="37.0" />
+    </edge>
+    <edge source="com.enigma717.invoicegenerator.Invoice" target="com.enigma717.invoicegenerator.Buyer" relationship="DEPENDENCY">
+      <point x="-123.33333333333326" y="-70.5" />
+      <point x="256.4412878787879" y="393.0" />
+      <point x="105.0" y="393.0" />
+      <point x="105.0" y="383.0" />
+      <point x="149.25" y="383.0" />
+      <point x="49.75" y="114.5" />
+    </edge>
+    <edge source="com.enigma717.invoicegenerator.AppMain" target="com.enigma717.invoicegenerator.AppMenu" relationship="CREATE">
+      <point x="0.0" y="-37.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.6402671755725191" showDependencies="true" x="791.9821162444114" y="503.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
